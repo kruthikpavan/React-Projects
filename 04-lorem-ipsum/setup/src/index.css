@@ -151,6 +151,7 @@ p {
   max-width: 40rem;
   margin-top: 5rem;
   text-align: center;
+
 }
 @media screen and (min-width: 992px) {
   .section-center {
