@@ -24,7 +24,12 @@ localStorage.setItem('items',JSON.stringify(items))
   },[items])
 
   function handleGroceryAdd() {
-    if (editActive) {
+    if(!itemName){
+      setShow(true)
+      setAlertMessage("Enter Item");
+    }
+    
+    else if (editActive) {
       const editedItemIndex = items.findIndex((i) => i.id == activeId);
       const itemsCopy = [...items];
       itemsCopy[editedItemIndex].name = itemName;

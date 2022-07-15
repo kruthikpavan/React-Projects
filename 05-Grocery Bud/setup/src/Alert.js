@@ -30,6 +30,9 @@ handleShow(false)
 { alertMessage==="Item Edited" && 
         
         <h5 className='alert-success'>Item Edited</h5>}
+        { alertMessage==="Enter Item" && 
+        
+        <h5 className='alert-danger'>Enter Item</h5>}
       
     </div>
   )
